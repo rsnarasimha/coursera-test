@@ -1,0 +1,94 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 1.75em;
+}
+
+#section1, #section2, #section3 {
+  border: 1px solid black;
+  background-color: #FFE4C4;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-family: Helvetica;
+  position: relative;
+}
+
+.sec-title-1, .sec-title-2, .sec-title-3 {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 1.25em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sec-title-1 {
+  background-color: #800000;
+  color: white;
+}
+
+.sec-title-2 {
+  background-color: #2F4F4F;
+  color: white;
+}
+
+.sec-title-3 {
+  background-color: #A0522D;
+}
+
+#p1, #p2, #p3 {
+  padding-top: 10px;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** desktop version **********/
+@media (min-width: 992px) {
+  .dv-col-3 {
+    float: left;
+    width: 33.33%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+/********** Tablet view **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .tv-col-2 {
+    float: left;
+    width: 50%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .tv-col-1 {
+    float: left;
+    width: 100%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+/********** Mobile view **********/
+@media (max-width: 767px) {
+  .mv-col-1 {
+    float: left;
+    width: 100%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
